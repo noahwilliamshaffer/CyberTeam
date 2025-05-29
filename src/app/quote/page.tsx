@@ -424,7 +424,7 @@ const QuotePage = () => {
                 <Mail className="h-6 w-6 text-cyber-200" />
                 <div>
                   <div className="font-semibold">Direct Email</div>
-                  <div className="text-cyber-100">urgent@cybersecurepro.com</div>
+                  <div className="text-cyber-100">urgent@sentinelshield.com</div>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-# 🛡️ CyberSecure Pro - Professional Cybersecurity Consulting Website
+# 🛡️ Sentinel Shield LLC - Professional Cybersecurity Consulting Website
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.3.3-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6.3-blue)](https://www.typescriptlang.org/)
@@ -131,7 +131,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the website.
 Create `.env.local` for local development:
 ```env
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_SITE_NAME="CyberSecure Pro"
+NEXT_PUBLIC_SITE_NAME="Sentinel Shield LLC"
 NEXT_PUBLIC_FORM_ENDPOINT=your_form_endpoint_here
 ```
 

@@ -112,7 +112,7 @@ const AboutPage = () => {
           >
             <Shield className="h-16 w-16 mx-auto mb-6 text-cyber-200" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About CyberSecure Pro
+              About Sentinel Shield LLC
             </h1>
             <p className="text-xl text-cyber-100 max-w-3xl mx-auto leading-relaxed">
               Founded by cybersecurity veterans, we&apos;re dedicated to protecting businesses 

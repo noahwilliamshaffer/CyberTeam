@@ -21,31 +21,30 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8 text-cyber-400" />
-              <span className="font-bold text-xl">CyberSecure Pro</span>
+              <span className="font-bold text-xl">Sentinel Shield LLC</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Professional cybersecurity consulting services to protect your business 
-              from evolving digital threats. We provide comprehensive security solutions 
-              tailored to your needs.
+              Your trusted partner in cybersecurity excellence. We protect businesses 
+              from digital threats with comprehensive security solutions and expert consulting.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mt-6">
               <a 
-                href="https://twitter.com/cybersecurepro" 
-                className="text-gray-400 hover:text-cyber-400 transition-colors"
+                href="https://twitter.com/sentinelshield" 
+                className="text-gray-300 hover:text-cyber-400 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkedin.com/company/cybersecurepro" 
-                className="text-gray-400 hover:text-cyber-400 transition-colors"
+                href="https://linkedin.com/company/sentinelshield" 
+                className="text-gray-300 hover:text-cyber-400 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://github.com/cybersecurepro" 
-                className="text-gray-400 hover:text-cyber-400 transition-colors"
+                href="https://github.com/sentinelshield" 
+                className="text-gray-300 hover:text-cyber-400 transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
@@ -91,8 +90,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-cyber-400" />
-                <a href="mailto:contact@cybersecurepro.com" className="text-gray-300 hover:text-cyber-400 transition-colors">
-                  contact@cybersecurepro.com
+                <a href="mailto:contact@sentinelshield.com" className="text-gray-300 hover:text-cyber-400 transition-colors">
+                  contact@sentinelshield.com
                 </a>
               </li>
               <li className="flex items-center space-x-3">
@@ -115,7 +114,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm">
-            © 2024 CyberSecure Pro. All rights reserved.
+            © 2024 Sentinel Shield LLC. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <Link href="/privacy" className="text-gray-400 hover:text-cyber-400 text-sm transition-colors">

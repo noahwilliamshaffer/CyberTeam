@@ -9,27 +9,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "CyberSecure Pro | Advanced Cybersecurity Consulting",
-    template: "%s | CyberSecure Pro"
+    default: "Sentinel Shield LLC | Advanced Cybersecurity Consulting",
+    template: "%s | Sentinel Shield LLC"
   },
-  description: "Professional cybersecurity consulting services including penetration testing, web app security, OSINT assessments, security audits, and compliance assistance. Protect your business with expert cybersecurity solutions.",
-  keywords: ["cybersecurity", "penetration testing", "security audit", "OWASP", "compliance", "HIPAA", "PCI-DSS", "vulnerability assessment"],
-  authors: [{ name: "CyberSecure Pro Team" }],
-  creator: "CyberSecure Pro",
-  publisher: "CyberSecure Pro",
+  description: "Expert cybersecurity consulting services including penetration testing, compliance audits, and security training. Protect your business with professional cybersecurity solutions.",
+  keywords: ["cybersecurity", "penetration testing", "security consulting", "compliance", "HIPAA", "PCI-DSS", "vulnerability assessment"],
+  authors: [{ name: "Sentinel Shield LLC Team" }],
+  creator: "Sentinel Shield LLC",
+  publisher: "Sentinel Shield LLC",
   openGraph: {
-    title: "CyberSecure Pro | Advanced Cybersecurity Consulting",
-    description: "Professional cybersecurity consulting services to protect your business from digital threats.",
-    url: "https://cybersecure-pro.vercel.app",
-    siteName: "CyberSecure Pro",
+    title: "Sentinel Shield LLC | Advanced Cybersecurity Consulting",
+    description: "Expert cybersecurity consulting services to protect your business from digital threats.",
+    url: "https://sentinelshield.vercel.app",
+    siteName: "Sentinel Shield LLC",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CyberSecure Pro | Advanced Cybersecurity Consulting",
-    description: "Professional cybersecurity consulting services to protect your business from digital threats.",
-    creator: "@cybersecurepro",
+    title: "Sentinel Shield LLC | Advanced Cybersecurity Consulting",
+    description: "Expert cybersecurity consulting services to protect your business from digital threats.",
+    creator: "@sentinelshield",
   },
   robots: {
     index: true,

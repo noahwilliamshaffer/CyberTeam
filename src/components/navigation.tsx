@@ -51,9 +51,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Shield className="h-8 w-8 text-cyber-600 dark:text-cyber-400" />
-            <span className="font-bold text-xl text-gray-900 dark:text-white">
-              CyberSecure Pro
-            </span>
+            <span className="font-bold text-xl text-gray-900 dark:text-white">Sentinel Shield LLC</span>
           </Link>
 
           {/* Desktop Navigation */}

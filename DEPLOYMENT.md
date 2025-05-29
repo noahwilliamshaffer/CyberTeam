@@ -1,4 +1,4 @@
-# 🚀 Deployment Guide - CyberSecure Pro Website
+# �� Deployment Guide - Sentinel Shield LLC Website
 
 This guide walks you through deploying your professional cybersecurity consulting website to various platforms.
 
@@ -24,9 +24,9 @@ Before deploying, ensure you've completed these steps:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: CyberSecure Pro website"
+   git commit -m "Initial commit: Sentinel Shield LLC website"
    git branch -M main
-   git remote add origin https://github.com/yourusername/cybersec-consulting.git
+   git remote add origin https://github.com/yourusername/sentinelshield-consulting.git
    git push -u origin main
    ```
 
@@ -135,7 +135,7 @@ Create `.env.local` for local development:
 ```env
 # Site Configuration
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_SITE_NAME="CyberSecure Pro"
+NEXT_PUBLIC_SITE_NAME="Sentinel Shield LLC"
 
 # Contact Form (if using a service like Formspree)
 NEXT_PUBLIC_FORM_ENDPOINT=your_form_endpoint_here
@@ -144,8 +144,8 @@ NEXT_PUBLIC_FORM_ENDPOINT=your_form_endpoint_here
 NEXT_PUBLIC_GA_ID=your_google_analytics_id
 
 # Email Service (if implementing contact form backend)
-EMAIL_FROM=contact@cybersecurepro.com
-EMAIL_TO=inquiries@cybersecurepro.com
+EMAIL_FROM=contact@sentinelshield.com
+EMAIL_TO=inquiries@sentinelshield.com
 SMTP_HOST=smtp.your-provider.com
 SMTP_PORT=587
 SMTP_USER=your_smtp_user

@@ -60,7 +60,7 @@ const HomePage = () => {
     {
       name: "Sarah Johnson",
       role: "CTO, TechCorp",
-      content: "CyberSecure Pro identified critical vulnerabilities we never knew existed. Their thorough approach and detailed reporting helped us strengthen our security posture significantly.",
+      content: "Sentinel Shield LLC identified critical vulnerabilities we never knew existed. Their thorough approach and detailed reporting helped us strengthen our security posture significantly.",
       rating: 5
     },
     {
