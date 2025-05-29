@@ -97,11 +97,6 @@ const HomePage = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-4xl mx-auto"
             >
-              <div className="mb-6">
-                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 border border-red-200 dark:border-red-700 mb-4">
-                  🇺🇸 Veteran-Owned & Operated Since Day One
-                </span>
-              </div>
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
                 <span className="bg-gradient-to-r from-cyber-600 to-purple-600 bg-clip-text text-transparent">
                   Cyber Security

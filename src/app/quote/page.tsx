@@ -7,8 +7,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { 
   Shield, 
-  Mail, 
-  Phone, 
   Building, 
   Users, 
   ArrowRight 
@@ -407,30 +405,22 @@ const QuotePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-8 bg-gradient-to-r from-cyber-600 to-cyber-800 rounded-2xl p-8 text-white"
           >
-            <h3 className="text-2xl font-bold mb-4">Need Immediate Assistance?</h3>
-            <p className="text-cyber-100 mb-6">
-              For urgent security concerns or questions about our services, 
-              contact us directly through any of the channels below.
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-6 w-6 text-cyber-200" />
+            <div className="bg-cyber-600/10 dark:bg-cyber-400/10 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-cyber-700 dark:text-cyber-300 mb-4">
+                Need Immediate Assistance?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                For urgent security incidents or immediate consultation needs, contact us directly.
+              </p>
+              <div className="space-y-3">
                 <div>
                   <div className="font-semibold">Emergency Hotline</div>
                   <div className="text-cyber-100">+1 (619) 621-8962</div>
                 </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-6 w-6 text-cyber-200" />
                 <div>
                   <div className="font-semibold">Direct Email</div>
                   <div className="text-cyber-100">noahwilliamshaffer@gmail.com</div>
                 </div>
-              </div>
-            </div>
-            <div className="mt-4 p-3 bg-red-100 dark:bg-red-900/30 rounded border border-red-200 dark:border-red-700">
-              <div className="flex items-center text-red-800 dark:text-red-200 text-sm font-semibold">
-                🇺🇸 Veteran-Owned Business - Military-Grade Security
               </div>
             </div>
           </motion.div>

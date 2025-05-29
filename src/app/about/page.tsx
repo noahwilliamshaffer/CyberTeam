@@ -104,11 +104,6 @@ const AboutPage = () => {
             className="text-center"
           >
             <Shield className="h-16 w-16 mx-auto mb-6 text-cyber-200" />
-            <div className="mb-6">
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 border border-red-200 dark:border-red-700">
-                🇺🇸 Proudly Veteran-Owned & Operated
-              </span>
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About Sentinel Shield LLC
             </h1>
