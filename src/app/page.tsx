@@ -242,8 +242,16 @@ const HomePage = () => {
                 <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🇺🇸</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Military Service</h3>
-                <p className="text-gray-600 dark:text-gray-300">Founded and operated by military veterans with proven cybersecurity expertise</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Veteran-Owned & Operated</h3>
+                <p className="text-gray-600 dark:text-gray-300">Founded and led by military veterans committed to protecting your business</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">⚓</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Navy Veteran Expertise</h3>
+                <p className="text-gray-600 dark:text-gray-300">Led by Erwin Bruno, Navy veteran with 20+ cybersecurity certifications</p>
               </div>
               
               <div className="text-center">
@@ -252,14 +260,6 @@ const HomePage = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Military-Grade Security</h3>
                 <p className="text-gray-600 dark:text-gray-300">Security protocols and procedures based on military standards and discipline</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-8 w-8 text-red-600 dark:text-red-400" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Mission First</h3>
-                <p className="text-gray-600 dark:text-gray-300">Unwavering commitment to protecting your business with the same dedication we served our country</p>
               </div>
             </div>
             

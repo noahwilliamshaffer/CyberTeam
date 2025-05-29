@@ -16,32 +16,25 @@ import {
 const AboutPage = () => {
   const team = [
     {
-      name: "Alex Chen",
+      name: "Noah Williams Shaffer",
       role: "Founder & CEO",
-      bio: "Former NSA cybersecurity analyst with 15+ years of experience in penetration testing and threat intelligence. CISSP, OSCP, and CEH certified.",
+      bio: "Veteran cybersecurity leader with extensive experience in penetration testing and security consulting. Military-trained professional dedicated to protecting businesses with the same precision brought to military service.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      certifications: ["CISSP", "OSCP", "CEH", "GCIH"]
+      certifications: ["Security+", "CISSP", "CEH", "OSCP"]
     },
     {
-      name: "Sarah Rodriguez",
-      role: "Chief Technical Officer",
-      bio: "Expert in web application security and compliance frameworks. Led security initiatives at Fortune 500 companies for over 12 years.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      certifications: ["CISSP", "CISA", "GWEB", "CISM"]
-    },
-    {
-      name: "Michael Thompson",
-      role: "Lead Penetration Tester",
-      bio: "Specialized in network security and social engineering assessments. Discovered vulnerabilities in major corporations worldwide.",
+      name: "Erwin Bruno",
+      role: "Chief Security Officer",
+      bio: "Distinguished Navy veteran with over 20 professional cybersecurity certifications. Brings decades of military discipline and advanced technical expertise to every security engagement.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      certifications: ["OSCP", "GPEN", "GCFA", "CEH"]
+      certifications: ["20+ Certifications", "Navy Veteran", "CISSP", "CISM", "CISSP", "OSCP", "GCIH", "GPEN"]
     },
     {
-      name: "Dr. Emily Wang",
-      role: "Head of Compliance",
-      bio: "PhD in Cybersecurity with expertise in HIPAA, PCI-DSS, and SOX compliance. Former compliance officer at healthcare technology companies.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
-      certifications: ["CISSP", "CISA", "CGEIT", "CRISC"]
+      name: "Operations Specialist",
+      role: "Security Analyst",
+      bio: "Dedicated security professional specializing in threat analysis and incident response. Supports our veteran-owned mission with technical excellence and attention to detail.",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      certifications: ["Security+", "CySA+", "GCFA", "GNFA"]
     }
   ];
 
@@ -71,27 +64,27 @@ const AboutPage = () => {
   const achievements = [
     {
       icon: Trophy,
-      number: "500+",
+      number: "200+",
       title: "Security Assessments",
-      description: "Completed comprehensive security evaluations for organizations worldwide."
+      description: "Comprehensive security evaluations delivered with military precision and attention to detail."
     },
     {
       icon: Shield,
-      number: "99.9%",
-      title: "Client Satisfaction",
-      description: "Maintained exceptional client satisfaction through expert service delivery."
+      number: "100%",
+      title: "Veteran Leadership",
+      description: "Veteran-owned and operated with military discipline driving every security engagement."
     },
     {
       icon: Award,
-      number: "50+",
-      title: "Certified Experts",
-      description: "Industry-certified professionals with advanced security credentials."
+      number: "20+",
+      title: "Expert Certifications",
+      description: "Combined team certifications including Erwin Bruno's impressive 20+ professional credentials."
     },
     {
       icon: Globe,
-      number: "25+",
-      title: "Countries Served",
-      description: "Global reach with clients across multiple continents and industries."
+      number: "3",
+      title: "Elite Specialists",
+      description: "Small, dedicated team ensuring personalized service and direct access to veteran expertise."
     }
   ];
 
@@ -240,14 +233,14 @@ const AboutPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Meet Our Expert Team
+              Meet Our Veteran-Led Team
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Industry veterans with decades of combined cybersecurity experience
+              Elite cybersecurity professionals led by military veterans with unmatched expertise
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
