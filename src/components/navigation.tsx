@@ -49,9 +49,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-3">
             <Shield className="h-8 w-8 text-cyber-600 dark:text-cyber-400" />
-            <span className="font-bold text-xl text-gray-900 dark:text-white">Sentinel Shield LLC</span>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl text-gray-900 dark:text-white">Sentinel Shield LLC</span>
+              <span className="text-xs text-cyber-600 dark:text-cyber-400 font-semibold">🇺🇸 Veteran-Owned</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

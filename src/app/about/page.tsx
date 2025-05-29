@@ -49,22 +49,22 @@ const AboutPage = () => {
     {
       icon: Shield,
       title: "Security First",
-      description: "We prioritize the security of our clients' data and systems above all else, ensuring confidentiality and integrity in every engagement."
+      description: "We prioritize the security of our clients' data and systems above all else, ensuring confidentiality and integrity in every engagement with military-grade precision."
     },
     {
       icon: Eye,
       title: "Transparency",
-      description: "Clear communication and detailed reporting ensure our clients understand their security posture and the steps needed for improvement."
+      description: "Clear communication and detailed reporting ensure our clients understand their security posture and the steps needed for improvement, following military briefing standards."
     },
     {
       icon: Target,
-      title: "Excellence",
-      description: "We maintain the highest standards in our assessments and recommendations, delivering actionable insights that drive real security improvements."
+      title: "Mission Excellence",
+      description: "We maintain the highest standards in our assessments and recommendations, delivering actionable insights that drive real security improvements with military precision."
     },
     {
       icon: Heart,
-      title: "Partnership",
-      description: "We view our clients as partners, working collaboratively to build lasting security resilience and business continuity."
+      title: "Service Partnership",
+      description: "As veterans, we view our clients as partners we serve, working collaboratively to build lasting security resilience with the same dedication we brought to military service."
     }
   ];
 
@@ -111,13 +111,18 @@ const AboutPage = () => {
             className="text-center"
           >
             <Shield className="h-16 w-16 mx-auto mb-6 text-cyber-200" />
+            <div className="mb-6">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 border border-red-200 dark:border-red-700">
+                🇺🇸 Proudly Veteran-Owned & Operated
+              </span>
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About Sentinel Shield LLC
             </h1>
             <p className="text-xl text-cyber-100 max-w-3xl mx-auto leading-relaxed">
-              Founded by cybersecurity veterans, we&apos;re dedicated to protecting businesses 
+              Founded by military cybersecurity veterans, we&apos;re dedicated to protecting businesses 
               from evolving digital threats through expert consulting, comprehensive assessments, 
-              and cutting-edge security solutions.
+              and cutting-edge security solutions with military-grade precision.
             </p>
           </motion.div>
         </div>
@@ -139,13 +144,13 @@ const AboutPage = () => {
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 To empower organizations of all sizes with enterprise-grade cybersecurity 
                 expertise, making advanced security accessible and understandable for 
-                every business.
+                every business, backed by military discipline and unwavering commitment to mission success.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                We believe that robust cybersecurity shouldn&apos;t be a luxury reserved for 
+                As a veteran-owned cybersecurity firm, we believe that robust cybersecurity shouldn&apos;t be a luxury reserved for 
                 large corporations. Every business deserves protection from digital threats, 
                 and we&apos;re here to provide that protection through expert consulting and 
-                practical solutions.
+                practical solutions with the same dedication we brought to serving our country.
               </p>
             </motion.div>
             <motion.div

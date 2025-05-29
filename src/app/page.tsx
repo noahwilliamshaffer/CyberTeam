@@ -92,18 +92,27 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              className="text-center max-w-4xl mx-auto"
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Protect Your Business with
-                <span className="text-transparent bg-clip-text cyber-gradient"> Expert Cybersecurity</span>
+              <div className="mb-6">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 border border-red-200 dark:border-red-700 mb-4">
+                  🇺🇸 Veteran-Owned & Operated Since Day One
+                </span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+                <span className="bg-gradient-to-r from-cyber-600 to-purple-600 bg-clip-text text-transparent">
+                  Cyber Security
+                </span>
+                <br />
+                You Can Trust
               </h1>
-              <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-                Professional cybersecurity consulting services including penetration testing, 
-                security audits, compliance assistance, and threat assessments to keep your 
-                business secure from evolving digital threats.
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+                Military-trained cybersecurity professionals protecting your business with 
+                the same precision and dedication we brought to defending our nation. 
+                Expert penetration testing, compliance, and security solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -208,6 +217,62 @@ const HomePage = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Veteran Trust Section */}
+      <section className="py-16 bg-red-50 dark:bg-red-900/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Veteran-Owned & Military-Trained
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-12">
+              Cybersecurity expertise backed by military service and dedication to mission success
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🇺🇸</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Military Service</h3>
+                <p className="text-gray-600 dark:text-gray-300">Founded and operated by military veterans with proven cybersecurity expertise</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-red-600 dark:text-red-400" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Military-Grade Security</h3>
+                <p className="text-gray-600 dark:text-gray-300">Security protocols and procedures based on military standards and discipline</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-8 w-8 text-red-600 dark:text-red-400" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Mission First</h3>
+                <p className="text-gray-600 dark:text-gray-300">Unwavering commitment to protecting your business with the same dedication we served our country</p>
+              </div>
+            </div>
+            
+            <div className="mt-12 p-6 bg-white dark:bg-gray-800 rounded-xl border border-red-200 dark:border-red-700 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center space-x-4 mb-4">
+                <span className="text-2xl">🏅</span>
+                <span className="font-bold text-lg text-gray-900 dark:text-white">Veteran Business Enterprise Certified</span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                Supporting veteran entrepreneurs while delivering cybersecurity excellence with military precision
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 

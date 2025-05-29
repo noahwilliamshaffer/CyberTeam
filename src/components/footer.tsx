@@ -23,9 +23,15 @@ const Footer = () => {
               <Shield className="h-8 w-8 text-cyber-400" />
               <span className="font-bold text-xl">Sentinel Shield LLC</span>
             </div>
+            <div className="mb-3">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 border border-red-200 dark:border-red-700">
+                🇺🇸 Veteran-Owned Business
+              </span>
+            </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Your trusted partner in cybersecurity excellence. We protect businesses 
-              from digital threats with comprehensive security solutions and expert consulting.
+              Your trusted veteran-owned cybersecurity partner. We protect businesses 
+              from digital threats with comprehensive security solutions and expert consulting 
+              backed by military-grade discipline and precision.
             </p>
             <div className="flex space-x-4 mt-6">
               <a 
@@ -90,14 +96,14 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-cyber-400" />
-                <a href="mailto:contact@sentinelshield.com" className="text-gray-300 hover:text-cyber-400 transition-colors">
-                  contact@sentinelshield.com
+                <a href="mailto:noahwilliamshaffer@gmail.com" className="text-gray-300 hover:text-cyber-400 transition-colors">
+                  noahwilliamshaffer@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-cyber-400" />
-                <a href="tel:+1-555-CYBER-SEC" className="text-gray-300 hover:text-cyber-400 transition-colors">
-                  +1 (555) CYBER-SEC
+                <a href="tel:+1-619-621-8962" className="text-gray-300 hover:text-cyber-400 transition-colors">
+                  +1 (619) 621-8962
                 </a>
               </li>
               <li className="flex items-start space-x-3">

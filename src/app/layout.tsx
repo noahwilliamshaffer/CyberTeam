@@ -9,17 +9,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Sentinel Shield LLC | Advanced Cybersecurity Consulting",
+    default: "Sentinel Shield LLC | Veteran-Owned Cybersecurity Consulting",
     template: "%s | Sentinel Shield LLC"
   },
-  description: "Expert cybersecurity consulting services including penetration testing, compliance audits, and security training. Protect your business with professional cybersecurity solutions.",
-  keywords: ["cybersecurity", "penetration testing", "security consulting", "compliance", "HIPAA", "PCI-DSS", "vulnerability assessment"],
+  description: "Veteran-owned cybersecurity consulting services including penetration testing, compliance audits, and security training. Military-trained professionals protecting your business with precision and dedication.",
+  keywords: ["cybersecurity", "penetration testing", "security consulting", "compliance", "HIPAA", "PCI-DSS", "vulnerability assessment", "veteran-owned", "military"],
   authors: [{ name: "Sentinel Shield LLC Team" }],
   creator: "Sentinel Shield LLC",
   publisher: "Sentinel Shield LLC",
   openGraph: {
-    title: "Sentinel Shield LLC | Advanced Cybersecurity Consulting",
-    description: "Expert cybersecurity consulting services to protect your business from digital threats.",
+    title: "Sentinel Shield LLC | Veteran-Owned Cybersecurity Consulting",
+    description: "Veteran-owned cybersecurity consulting services with military-trained professionals protecting businesses from digital threats.",
     url: "https://sentinelshield.vercel.app",
     siteName: "Sentinel Shield LLC",
     locale: "en_US",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sentinel Shield LLC | Advanced Cybersecurity Consulting",
-    description: "Expert cybersecurity consulting services to protect your business from digital threats.",
+    title: "Sentinel Shield LLC | Veteran-Owned Cybersecurity Consulting",
+    description: "Veteran-owned cybersecurity consulting services with military-trained professionals protecting businesses from digital threats.",
     creator: "@sentinelshield",
   },
   robots: {

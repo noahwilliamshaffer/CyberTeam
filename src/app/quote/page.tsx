@@ -416,16 +416,21 @@ const QuotePage = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-6 w-6 text-cyber-200" />
                 <div>
-                  <div className="font-semibold">Emergency Line</div>
-                  <div className="text-cyber-100">+1 (555) CYBER-911</div>
+                  <div className="font-semibold">Emergency Hotline</div>
+                  <div className="text-cyber-100">+1 (619) 621-8962</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-6 w-6 text-cyber-200" />
                 <div>
                   <div className="font-semibold">Direct Email</div>
-                  <div className="text-cyber-100">urgent@sentinelshield.com</div>
+                  <div className="text-cyber-100">noahwilliamshaffer@gmail.com</div>
                 </div>
+              </div>
+            </div>
+            <div className="mt-4 p-3 bg-red-100 dark:bg-red-900/30 rounded border border-red-200 dark:border-red-700">
+              <div className="flex items-center text-red-800 dark:text-red-200 text-sm font-semibold">
+                🇺🇸 Veteran-Owned Business - Military-Grade Security
               </div>
             </div>
           </motion.div>
