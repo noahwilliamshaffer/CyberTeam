@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Head from 'next/head';
 import { 
   Shield, 
   Award, 
@@ -19,18 +18,6 @@ import {
   ExternalLink,
   Mail
 } from 'lucide-react';
-
-// Metadata for SEO
-export const metadata = {
-  title: 'Erwin Bruno – Tech Lead | Cybersecurity Specialist | Sentinel Shield LLC',
-  description: 'Meet Erwin Bruno, our military-veteran cybersecurity lead with expertise in penetration testing, OSINT, compliance, and secure architecture.',
-  keywords: 'Erwin Bruno, cybersecurity expert, tech lead, penetration testing, red team, military veteran, OSINT, compliance',
-  openGraph: {
-    title: 'Erwin Bruno – Tech Lead | Cybersecurity Specialist',
-    description: 'Meet our veteran cybersecurity expert with military precision and industry certifications.',
-    type: 'profile',
-  },
-};
 
 const ErwinBrunoPage = () => {
   const [hoveredCert, setHoveredCert] = useState<string | null>(null);
@@ -220,7 +207,7 @@ const ErwinBrunoPage = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                "Discipline forged in service. Precision executed in cyberspace."
+                &ldquo;Discipline forged in service. Precision executed in cyberspace.&rdquo;
               </h2>
               
               <div className="space-y-6 text-lg text-gray-600 dark:text-gray-300">
