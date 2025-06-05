@@ -16,32 +16,25 @@ import {
 const AboutPage = () => {
   const team = [
     {
-      name: "Alex Chen",
-      role: "Founder & CEO",
-      bio: "Former NSA cybersecurity analyst with 15+ years of experience in penetration testing and threat intelligence. CISSP, OSCP, and CEH certified.",
+      name: "Noah Shaffer",
+      role: "Chief Technology Officer",
+      bio: "Visionary technology leader with extensive experience in cybersecurity strategy and implementation. Drives innovation and technical excellence across all security initiatives.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      certifications: ["CISSP", "OSCP", "CEH", "GCIH"]
+      certifications: ["CISSP", "CISM", "CompTIA Security+", "GCIH"]
     },
     {
-      name: "Sarah Rodriguez",
-      role: "Chief Technical Officer",
-      bio: "Expert in web application security and compliance frameworks. Led security initiatives at Fortune 500 companies for over 12 years.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      certifications: ["CISSP", "CISA", "GWEB", "CISM"]
-    },
-    {
-      name: "Michael Thompson",
-      role: "Lead Penetration Tester",
-      bio: "Specialized in network security and social engineering assessments. Discovered vulnerabilities in major corporations worldwide.",
+      name: "Erwin Bruno",
+      role: "Tech Lead / Red Team Operator",
+      bio: "U.S. Military veteran with deep expertise in penetration testing, OSINT, and offensive security operations. Leads all technical assessments with military precision.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      certifications: ["OSCP", "GPEN", "GCFA", "CEH"]
+      certifications: ["CEH", "PenTest+", "Security+", "Network+"]
     },
     {
-      name: "Dr. Emily Wang",
-      role: "Head of Compliance",
-      bio: "PhD in Cybersecurity with expertise in HIPAA, PCI-DSS, and SOX compliance. Former compliance officer at healthcare technology companies.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
-      certifications: ["CISSP", "CISA", "CGEIT", "CRISC"]
+      name: "Matthew",
+      role: "Business Management",
+      bio: "Strategic business operations leader focused on client relations, project management, and organizational growth. Ensures seamless service delivery and client satisfaction.",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+      certifications: ["PMP", "CISA", "Six Sigma Black Belt"]
     }
   ];
 
