@@ -1,90 +1,118 @@
-import { collection, addDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
-import { db } from './firebase';
+// MongoDB API service functions for form submissions
 
-// Types for form submissions
-export interface QuoteSubmission {
+export interface QuoteFormData {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
   company: string;
-  jobTitle: string;
-  companySize: string;
+  employeeCount: string;
   services: string[];
   timeline: string;
   budget: string;
-  description: string;
-  urgency: string;
-  submittedAt: Timestamp;
-  status: 'new' | 'reviewed' | 'contacted' | 'quoted' | 'closed';
-  source: 'website';
+  message: string;
 }
 
-export interface ContactSubmission {
+export interface ContactFormData {
   name: string;
   email: string;
+  subject: string;
   message: string;
-  submittedAt: Timestamp;
-  status: 'new' | 'reviewed' | 'responded' | 'closed';
-  source: 'website';
 }
 
-// Submit quote request to Firebase
-export async function submitQuoteRequest(formData: Omit<QuoteSubmission, 'submittedAt' | 'status' | 'source'>) {
-  try {
-    const submissionData: QuoteSubmission = {
-      ...formData,
-      submittedAt: serverTimestamp() as Timestamp,
-      status: 'new',
-      source: 'website'
-    };
-
-    const docRef = await addDoc(collection(db, 'quotes'), submissionData);
-    console.log('Quote submission successful with ID:', docRef.id);
-    
-    return { success: true, id: docRef.id };
-  } catch (error) {
-    console.error('Error submitting quote request:', error);
-    return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
-  }
+export interface NewsletterFormData {
+  email: string;
 }
 
-// Submit general contact form to Firebase
-export async function submitContactForm(formData: Omit<ContactSubmission, 'submittedAt' | 'status' | 'source'>) {
+// Submit quote request
+export const submitQuote = async (data: QuoteFormData): Promise<{ success: boolean; message: string; id?: string }> => {
   try {
-    const submissionData: ContactSubmission = {
-      ...formData,
-      submittedAt: serverTimestamp() as Timestamp,
-      status: 'new',
-      source: 'website'
+    const response = await fetch('/api/quotes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || 'Failed to submit quote request');
+    }
+
+    return {
+      success: true,
+      message: result.message,
+      id: result.id,
     };
-
-    const docRef = await addDoc(collection(db, 'contacts'), submissionData);
-    console.log('Contact submission successful with ID:', docRef.id);
-    
-    return { success: true, id: docRef.id };
   } catch (error) {
-    console.error('Error submitting contact form:', error);
-    return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
+    console.error('Quote submission error:', error);
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : 'Failed to submit quote request',
+    };
   }
-}
+};
 
-// Subscribe to newsletter
-export async function subscribeToNewsletter(email: string) {
+// Submit contact form
+export const submitContact = async (data: ContactFormData): Promise<{ success: boolean; message: string; id?: string }> => {
   try {
-    const submissionData = {
-      email,
-      subscribedAt: serverTimestamp() as Timestamp,
-      source: 'website',
-      status: 'active'
-    };
+    const response = await fetch('/api/contacts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-    const docRef = await addDoc(collection(db, 'newsletter'), submissionData);
-    console.log('Newsletter subscription successful with ID:', docRef.id);
-    
-    return { success: true, id: docRef.id };
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || 'Failed to submit contact form');
+    }
+
+    return {
+      success: true,
+      message: result.message,
+      id: result.id,
+    };
   } catch (error) {
-    console.error('Error subscribing to newsletter:', error);
-    return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
+    console.error('Contact submission error:', error);
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : 'Failed to submit contact form',
+    };
   }
-} 
+};
+
+// Submit newsletter subscription
+export const submitNewsletter = async (data: NewsletterFormData): Promise<{ success: boolean; message: string; id?: string }> => {
+  try {
+    const response = await fetch('/api/newsletter', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || 'Failed to subscribe to newsletter');
+    }
+
+    return {
+      success: true,
+      message: result.message,
+      id: result.id,
+    };
+  } catch (error) {
+    console.error('Newsletter subscription error:', error);
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : 'Failed to subscribe to newsletter',
+    };
+  }
+}; 
