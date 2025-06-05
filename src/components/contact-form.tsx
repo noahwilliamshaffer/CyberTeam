@@ -4,12 +4,13 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Mail, User, MessageSquare, Send } from 'lucide-react';
-import { submitContactForm } from '@/lib/submissions';
+import { submitContact } from '@/lib/submissions';
 import { useToast, ToastContainer } from '@/components/toast';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
+  subject: z.string().min(2, 'Subject is required'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
@@ -39,17 +40,17 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 
   const onSubmit = async (formData: ContactFormData) => {
     try {
-      const result = await submitContactForm(formData);
+      const result = await submitContact(formData);
       
       if (result.success) {
         showSuccess(
           'Message Sent!',
-          `Thank you for contacting us! We'll get back to you within 24 hours. Message ID: ${result.id}`,
+          `Thank you for contacting us! We'll get back to you within 24 hours.`,
           7000
         );
         reset();
       } else {
-        throw new Error(result.error || 'Submission failed');
+        throw new Error(result.message || 'Submission failed');
       }
     } catch (error) {
       console.error('Error submitting contact form:', error);
@@ -102,6 +103,22 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+            )}
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <MessageSquare className="h-4 w-4 inline mr-1" />
+              Subject *
+            </label>
+            <input
+              {...register('subject')}
+              type="text"
+              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-cyber-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              placeholder="Brief description of your inquiry"
+            />
+            {errors.subject && (
+              <p className="mt-1 text-sm text-red-600">{errors.subject.message}</p>
             )}
           </div>
 

@@ -13,7 +13,7 @@ import {
   Users, 
   ArrowRight 
 } from 'lucide-react';
-import { submitQuoteRequest } from '@/lib/submissions';
+import { submitQuote } from '@/lib/submissions';
 import { useToast, ToastContainer } from '@/components/toast';
 
 const quoteSchema = z.object({
@@ -50,18 +50,32 @@ const QuotePage = () => {
 
   const onSubmit = async (formData: QuoteFormData) => {
     try {
-      // Submit to Firebase
-      const result = await submitQuoteRequest(formData);
+      // Transform form data to match MongoDB structure
+      const mongoData = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        employeeCount: formData.companySize, // Map companySize to employeeCount
+        services: formData.services,
+        timeline: formData.timeline,
+        budget: formData.budget,
+        message: `${formData.description}\n\nJob Title: ${formData.jobTitle}\nUrgency: ${formData.urgency}` // Combine description with extra fields
+      };
+
+      // Submit to MongoDB
+      const result = await submitQuote(mongoData);
       
       if (result.success) {
         showSuccess(
           'Quote Request Submitted!',
-          `Thank you for your request! We will contact you within 24 hours. Submission ID: ${result.id}`,
+          `Thank you for your request! We will contact you within 24 hours.`,
           7000
         );
         reset();
       } else {
-        throw new Error(result.error || 'Submission failed');
+        throw new Error(result.message || 'Submission failed');
       }
     } catch (error) {
       console.error('Error submitting quote request:', error);

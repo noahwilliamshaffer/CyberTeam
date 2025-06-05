@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Mail, Send, Shield } from 'lucide-react';
-import { subscribeToNewsletter } from '@/lib/submissions';
+import { submitNewsletter } from '@/lib/submissions';
 import { useToast, ToastContainer } from '@/components/toast';
 
 const newsletterSchema = z.object({
@@ -39,7 +39,7 @@ export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
 
   const onSubmit = async (formData: NewsletterFormData) => {
     try {
-      const result = await subscribeToNewsletter(formData.email);
+      const result = await submitNewsletter(formData);
       
       if (result.success) {
         showSuccess(
@@ -49,7 +49,7 @@ export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
         );
         reset();
       } else {
-        throw new Error(result.error || 'Subscription failed');
+        throw new Error(result.message || 'Subscription failed');
       }
     } catch (error) {
       console.error('Error subscribing to newsletter:', error);
