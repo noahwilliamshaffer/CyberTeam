@@ -84,8 +84,8 @@ const AboutPage = () => {
     {
       icon: Award,
       number: "50+",
-      title: "Certified Experts",
-      description: "Industry-certified professionals with advanced security credentials."
+      title: "Veteran Experts",
+      description: "Military-trained cybersecurity professionals with advanced security credentials."
     },
     {
       icon: Globe,

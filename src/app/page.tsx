@@ -81,7 +81,7 @@ const HomePage = () => {
     { number: "500+", label: "Security Assessments" },
     { number: "99.9%", label: "Client Satisfaction" },
     { number: "24/7", label: "Support Available" },
-    { number: "50+", label: "Certified Experts" }
+    { number: "50+", label: "Veteran Experts" }
   ];
 
   return (

@@ -1,0 +1,45 @@
+[debug] [2025-06-05T19:28:14.660Z] ----------------------------------------------------------------------
+[debug] [2025-06-05T19:28:14.661Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\noahw\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-05T19:28:14.661Z] CLI Version:   14.6.0
+[debug] [2025-06-05T19:28:14.661Z] Platform:      win32
+[debug] [2025-06-05T19:28:14.661Z] Node Version:  v22.16.0
+[debug] [2025-06-05T19:28:14.662Z] Time:          Thu Jun 05 2025 12:28:14 GMT-0700 (Pacific Daylight Time)
+[debug] [2025-06-05T19:28:14.662Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-05T19:28:14.663Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-06-05T19:28:14.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-05T19:28:14.689Z] > authorizing via signed-in user (noahwilliamshaffer@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\noahw\Desktop\CyberTeam\CyberTeam
+
+[debug] [2025-06-05T19:28:14.842Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-06-05T19:28:14.842Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-06-05T19:28:43.908Z] ----------------------------------------------------------------------
+[debug] [2025-06-05T19:28:43.909Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\noahw\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init emulators
+[debug] [2025-06-05T19:28:43.909Z] CLI Version:   14.6.0
+[debug] [2025-06-05T19:28:43.909Z] Platform:      win32
+[debug] [2025-06-05T19:28:43.909Z] Node Version:  v22.16.0
+[debug] [2025-06-05T19:28:43.909Z] Time:          Thu Jun 05 2025 12:28:43 GMT-0700 (Pacific Daylight Time)
+[debug] [2025-06-05T19:28:43.909Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-05T19:28:43.912Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-05T19:28:43.913Z] > authorizing via signed-in user (noahwilliamshaffer@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\noahw\Desktop\CyberTeam\CyberTeam
+
