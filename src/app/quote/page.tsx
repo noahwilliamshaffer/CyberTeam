@@ -13,6 +13,8 @@ import {
   Users, 
   ArrowRight 
 } from 'lucide-react';
+import { submitQuoteRequest } from '@/lib/submissions';
+import { useToast, ToastContainer } from '@/components/toast';
 
 const quoteSchema = z.object({
   firstName: z.string().min(2, 'First name must be at least 2 characters'),
@@ -32,6 +34,8 @@ const quoteSchema = z.object({
 type QuoteFormData = z.infer<typeof quoteSchema>;
 
 const QuotePage = () => {
+  const { toasts, removeToast, showSuccess, showError } = useToast();
+  
   const {
     register,
     handleSubmit,
@@ -44,19 +48,28 @@ const QuotePage = () => {
     }
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const onSubmit = async (_formData: QuoteFormData) => {
+  const onSubmit = async (formData: QuoteFormData) => {
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      // TODO: Replace with actual API endpoint
-      // Send _formData to your backend API
-      // Form data will be processed here: _formData
-      alert('Thank you for your request! We will contact you within 24 hours.');
-      reset();
-    } catch {
-      // TODO: Implement proper error logging
-      alert('There was an error submitting your request. Please try again.');
+      // Submit to Firebase
+      const result = await submitQuoteRequest(formData);
+      
+      if (result.success) {
+        showSuccess(
+          'Quote Request Submitted!',
+          `Thank you for your request! We will contact you within 24 hours. Submission ID: ${result.id}`,
+          7000
+        );
+        reset();
+      } else {
+        throw new Error(result.error || 'Submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting quote request:', error);
+      showError(
+        'Submission Failed',
+        'There was an error submitting your request. Please try again or contact us directly.',
+        7000
+      );
     }
   };
 
@@ -431,6 +444,9 @@ const QuotePage = () => {
           </motion.div>
         </div>
       </section>
+      
+      {/* Toast Container */}
+      <ToastContainer toasts={toasts} onRemove={removeToast} />
     </div>
   );
 };
