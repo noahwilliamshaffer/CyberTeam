@@ -91,42 +91,47 @@ const QuotePage = () => {
     {
       id: 'penetration-testing',
       name: 'Penetration Testing',
-      description: 'Comprehensive security assessments'
+      description: 'Internal and external assessments to identify vulnerabilities'
     },
     {
       id: 'web-app-security',
-      name: 'Web Application Security',
-      description: 'OWASP Top 10 focused testing'
+      name: 'Web App Security (OWASP Top 10)',
+      description: 'Deep testing for injection flaws and access control failures'
     },
     {
-      id: 'osint-assessment',
-      name: 'OSINT Assessment',
-      description: 'Open source intelligence gathering'
+      id: 'vulnerability-scanning',
+      name: 'Vulnerability Scanning',
+      description: 'Automated and manual scanning with actionable reporting'
+    },
+    {
+      id: 'osint-threat-mapping',
+      name: 'OSINT & Threat Surface Mapping',
+      description: 'Identify publicly exposed data attackers can use'
+    },
+    {
+      id: 'cybersecurity-training',
+      name: 'Cybersecurity Training',
+      description: 'Staff awareness programs to reduce human error'
     },
     {
       id: 'security-audits',
-      name: 'Security Audits',
-      description: 'NIST/CIS framework audits'
+      name: 'Security Checklists & Audits',
+      description: 'CIS/NIST framework audits and misconfigurations'
     },
     {
-      id: 'compliance',
-      name: 'Compliance Assistance',
-      description: 'HIPAA, PCI-DSS, SOX compliance'
+      id: 'cis-control-implementation',
+      name: 'CIS Control 1 Implementation',
+      description: 'Asset inventory and lifecycle management'
     },
     {
-      id: 'security-training',
-      name: 'Security Training',
-      description: 'Employee awareness training'
+      id: 'compliance-support',
+      name: 'Compliance Support',
+      description: 'HIPAA, PCI-DSS, ISO 27001 gap analysis and roadmaps'
     },
     {
-      id: 'vulnerability-scans',
-      name: 'Vulnerability Scans',
-      description: 'Automated scanning with detailed reports'
-    },
-    {
-      id: 'incident-response',
-      name: 'Incident Response',
-      description: 'Emergency security response'
+      id: 'security-engineering-review',
+      name: 'Security Engineering Review',
+      description: 'Architecture-level evaluations with blue-team focus'
     }
   ];
 
